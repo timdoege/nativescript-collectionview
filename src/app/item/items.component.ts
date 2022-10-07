@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core'
+import { ObservableArray } from '@nativescript/core'
 
 import { Item } from './item'
 import { ItemService } from './item.service'
@@ -8,12 +9,17 @@ import { ItemService } from './item.service'
   templateUrl: './items.component.html',
 })
 export class ItemsComponent implements OnInit {
-  items: Array<Item>
+  items: ObservableArray<Item>
 
   constructor(private itemService: ItemService) {}
 
   ngOnInit(): void {
-    this.items = this.itemService.getItems()
+    let tItems = this.itemService.getItems()
+    this.items = new ObservableArray();
+    tItems.forEach(x => {
+      this.items.push(x);
+    });
+
   }
 
   public toggleCheck(item: Item) {
