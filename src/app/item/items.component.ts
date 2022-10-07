@@ -15,4 +15,11 @@ export class ItemsComponent implements OnInit {
   ngOnInit(): void {
     this.items = this.itemService.getItems()
   }
+
+  public toggleCheck(item: Item) {
+    console.log(`Tap tap tap on ${item}`);
+    console.dir(item);
+    item.name = 'Messi';
+    
+  }
 }

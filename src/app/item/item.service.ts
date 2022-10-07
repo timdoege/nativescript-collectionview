@@ -28,7 +28,24 @@ export class ItemService {
     { id: 22, name: 'Aleix Vidal', role: 'Midfielder' },
     { id: 23, name: 'Umtiti', role: 'Defender' },
     { id: 24, name: 'Mathieu', role: 'Defender' },
-    { id: 25, name: 'Masip', role: 'Goalkeeper' }
+    { id: 25, name: 'Masip', role: 'Goalkeeper' },
+    { id: 26, name: 'Denis Suárez', role: 'Midfielder' },
+    { id: 27, name: 'Arda', role: 'Midfielder' },
+    { id: 28, name: 'A. Iniesta', role: 'Midfielder' },
+    { id: 29, name: 'Suárez', role: 'Forward' },
+    { id: 30, name: 'Messi', role: 'Forward' },
+    { id: 31, name: 'Neymar', role: 'Forward' },
+    { id: 32, name: 'Rafinha', role: 'Midfielder' },
+    { id: 33, name: 'Cillessen', role: 'Goalkeeper' },
+    { id: 34, name: 'Mascherano', role: 'Defender' },
+    { id: 37, name: 'Paco Alcácer', role: 'Forward' },
+    { id: 38, name: 'Jordi Alba', role: 'Defender' },
+    { id: 39, name: 'Digne', role: 'Defender' },
+    { id: 30, name: 'Sergi Roberto', role: 'Midfielder' },
+    { id: 31, name: 'André Gomes', role: 'Midfielder' },
+    { id: 32, name: 'Aleix Vidal', role: 'Midfielder' },
+    { id: 33, name: 'Umtiti', role: 'Defender' },
+    { id: 34, name: 'Mathieu', role: 'Defender' }
   )
 
   getItems(): Array<Item> {
